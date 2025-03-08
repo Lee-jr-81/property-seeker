@@ -1,0 +1,6 @@
+Section 4 -- SSR = Server side rendering. All the site files are rendered on the server and then served to the client. This speeds up page loads because none of the rendering needs to happen on the client.
+SSG = Static site generation. This takes SSR one step further by rendering all the site files at build time, using vercel as an example. This makes load times blazing fast because now when any requests from th eclinet are made, there are zero renders required. The downside is any time changes are made to the site files are made, a fresh build is required. So this is great for something like a portfolio website but not great for a marketplace where users upload their own data.
+
+General -- I was confused the last few builds as to why there is no tailwind.config file in my file tree anymore. Looking at Next docs its because as of tailwind 4.0 there is no config required by default. This is something new to be aware of. Instead i now have a postcss.config file. But i dont need to touch that just yet.
+
+Section 9 -- By default when setting up a next project, the metadata function boilerplate in the layout file only includes the title and description object keys. But i can also add a keywords key where i can specify keywords that web crawlers can easily read and identify. Do this always!
